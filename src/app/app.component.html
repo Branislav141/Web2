@@ -1,16 +1,24 @@
 <header id="navbar">
   <ul>
-    <li><button class="btn btn-light btn-lg">Register</button></li>
-    <li><button class="btn btn-dark btn-lg">Login</button></li>
+    <li><button class="btn btn-light btn-lg" (click)="showRegister()">Register</button></li>
+    <li><button class="btn btn-dark btn-lg" (click)="showLogin()">Login</button></li>
   </ul>
 </header>
 
 <div class="content">
   <div class="d-flex justify-content-center">
     <table id="menu">
-      <tr><td><button class="btn btn-secondary btn-lg">AVIOKOMPANIIJA</button></td></tr>
+      <tr><td><button class="btn btn-secondary btn-lg" style="min-width: 200px">AVIOKOMPANIIJA</button></td></tr>
       <tr><td>-ili-</td></tr>
-      <tr><td><button class="btn btn-secondary btn-lg">RENT-A-CAR</button></td></tr>
+      <tr><td><button class="btn btn-secondary btn-lg" style="min-width: 200px">RENT-A-CAR</button></td></tr>
     </table>
   </div>
+</div>
+
+<div [hidden]=login>
+  <app-login></app-login>
+</div>
+
+<div [hidden]=register>
+  <app-register></app-register>
 </div>

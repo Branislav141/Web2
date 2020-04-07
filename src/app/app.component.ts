@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'web2';
+  login:boolean = true;
+  register:boolean = true;
+
+
+  showLogin(){
+    this.login = !this.login;
+
+    if(!this.register)
+      this.register = true
+  }
+
+  showRegister(){
+    this.register = !this.register;
+
+    if(!this.login)
+      this.login = true
+  }
+
 }
