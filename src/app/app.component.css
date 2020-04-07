@@ -1,0 +1,20 @@
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #343a40;
+  }
+  
+#navbar li button {
+    border-radius: 0px;
+    float: right;
+}
+
+#menu {
+    margin: 20px;
+    padding: 10px;
+}
+#menu tr{
+    text-align: center;
+}
