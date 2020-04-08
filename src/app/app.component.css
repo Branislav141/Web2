@@ -1,20 +1,52 @@
-#navbar ul {
-    list-style-type: none;
+#navbar  {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #343a40;
-  }
+}
   
-#navbar li button {
+#navbar button {
     border-radius: 0px;
+    float: left;
+}
+
+#navbar img {
+    height: 50px;
+    width: 50px;
+}
+
+#lista {
+    list-style-type: none;
+    float: right;
+}
+
+#lista li {
     float: right;
 }
 
 #menu {
-    margin: 20px;
-    padding: 10px;
-}
-#menu tr{
     text-align: center;
+}
+
+#aviokompanija {
+    background: url('../assets/avion.jpg');
+    min-height: 500px;
+    min-width: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rent-a-car {
+    background: url('../assets/auti.jpg');
+    min-height: 500px;
+    min-width: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#oba{
+    background: url('../assets/auti_i_avioni.jpg');
+    min-height: 500px;
+    min-width: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
