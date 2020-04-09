@@ -1,16 +1,14 @@
 <header id="navbar">
   <div>
     <img src="assets/avion_icon.jpg" />
-    <button class="btn btn-dark btn-lg">Lagana priča travel</button>
+    <button class="btn btn-dark btn-lg" (click)="clickMe()">Lagana priča travel</button>
 
     <ul id="lista">
       <li>
-        <button class="btn btn-light btn-lg" (click)="showRegister()">
-          Register
-        </button>
+        <button class="btn btn-light btn-lg" data-toggle="modal" data-target="#registerModal">Register</button>
       </li>
       <li>
-        <button class="btn btn-dark btn-lg" (click)="showLogin()">Login</button>
+        <button class="btn btn-dark btn-lg" data-toggle="modal" data-target="#loginModal">Login</button>
       </li>
     </ul>
   </div>
@@ -33,30 +31,38 @@
 -->
 <div class="content">
   <div id="menu"> 
-    <div id="aviokompanija" >
-      <button class="btn btn-secondary btn-lg" style="min-width: 350px;">
-        AVIOKOMPANIJA
-      </button> 
-    </div>
-      <h1>-ili-</h1>
-    <div id="rent-a-car">
-      <button class="btn btn-secondary btn-lg" style="min-width: 350px;">
-        RENT-A-CAR
-      </button>
-    </div>
-      <h1>-ili-</h1>
-    <div id="oba">
-      <button class="btn btn-secondary btn-lg" style="min-width: 350px;">
-        AVIOKOMPANIJA + RENT-A-CAR
-      </button>
-    </div>
+
+    <a [routerLink]="" (click)="clickMe()" style="text-decoration: none;">
+      <div id="aviokompanija" > 
+        <p>
+          <i>AVIOKARTE</i>  
+        </p>
+      </div>
+    </a> 
+
+    <a [routerLink]="" (click)="clickMe()" style="text-decoration: none;">
+      <div id="rent-a-car">
+        <p>
+          <i>RENT-A-CAR</i>
+        </p>
+      </div>
+    </a> 
+
+    <a [routerLink]="" (click)="clickMe()" style="text-decoration: none;">
+      <div id="oba">
+        <p>
+          <i>AVIOKARTE I RENT-A-CAR</i>
+        </p>
+      </div>
+    </a> 
+
   </div>
 </div>
 
-<div [hidden]="login">
+<div>
   <app-login></app-login>
 </div>
 
-<div [hidden]="register">
+<div>
   <app-register></app-register>
 </div>

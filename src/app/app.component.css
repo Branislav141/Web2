@@ -43,6 +43,13 @@
     background-position: center;
 }
 
+#aviokompanija p{
+    color: #f8f9fa;
+    font-size: 128px;
+    line-height: 500px;
+    text-align: center;
+}
+
 #rent-a-car {
     background: url('../assets/auti.jpg');
     min-height: 500px;
@@ -51,10 +58,24 @@
     background-position: center;
 }
 
+#rent-a-car p{
+    color: #f8f9fa;
+    font-size: 128px;
+    line-height: 500px;
+    text-align: center;
+}
+
 #oba{
     background: url('../assets/auti_i_avioni.jpg');
     min-height: 500px;
     min-width: 350px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#oba p{
+    color: #f8f9fa;
+    font-size: 128px;
+    line-height: 500px;
+    text-align: center;
 }
