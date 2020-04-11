@@ -16,7 +16,7 @@
                             E-mail:
                         </td>
                         <td>
-                            <input type="text" placeholder="tvojmejl@gmail.com" style="width: 100%;">
+                            <input type="text" placeholder="tvojmejl@gmail.com" style="width: 100%;" #emailInput />
                         </td>
                     </tr>
                     <tr>
@@ -24,12 +24,12 @@
                             Sifra:
                         </td>
                         <td>
-                            <input type="password" style="width: 100%;">
+                            <input type="password" style="width: 100%;" #passwordInput />
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center">
-                            <button class="btn btn-dark" style="width: 100%;">Login</button>
+                            <button class="btn btn-dark" style="width: 100%;" (click)="login(emailInput, passwordInput)">Login</button>
                         </td>
                     </tr>
                     <tr>

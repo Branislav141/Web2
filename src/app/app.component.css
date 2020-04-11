@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-#buffer {
+#buffer { /* ovo samo sluzi da bi se natpis AVIOKARTE lepo centrirao */
     background-color: #343a40;
 }
 
@@ -46,7 +46,7 @@
 #aviokompanija p{
     color: #f8f9fa;
     font-size: 128px;
-    line-height: 500px;
+    line-height: 400px;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@
 #rent-a-car p{
     color: #f8f9fa;
     font-size: 128px;
-    line-height: 500px;
+    line-height: 400px;
     text-align: center;
 }
 
@@ -76,6 +76,6 @@
 #oba p{
     color: #f8f9fa;
     font-size: 128px;
-    line-height: 500px;
+    line-height: 400px;
     text-align: center;
 }
