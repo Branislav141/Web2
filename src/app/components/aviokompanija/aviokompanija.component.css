@@ -1,0 +1,9 @@
+#aviokompanija {
+  background: url("src/assets/Aviokompanija.jpg");
+  min-height: 700px;
+  min-width: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
