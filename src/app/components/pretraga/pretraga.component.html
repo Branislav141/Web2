@@ -1,9 +1,9 @@
   <!-- Modal -->
-  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal fade" id="pretragaModal" tabindex="-1" role="dialog" aria-labelledby="pretragaModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <h5 class="modal-title" id="pretragaModalLabel">Napredna pretraga</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -12,69 +12,66 @@
             <table>
                 <tr>
                     <td>
-                        E-mail:
+                        Datum preuzimanja auta:
                     </td>
                     <td>
-                        <input type="text" placeholder="tvojmejl@gmail.com" #emailInput>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Ime:
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Luka" #nameInput>
+                        <input type="date" style="width: 100%;" #datumPreuzimanjaInput />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Prezime:
+                        Mesto preuzimanja auta:
                     </td>
                     <td>
-                        <input type="text" placeholder="Draca" #lastnameInput>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Sifra:
-                    </td>
-                    <td>
-                        <input type="password" #passwordInput>
+                        <input type="password" placeholder="grad preuzimanja" style="width: 100%;" #mestoPreuzimanjaInput />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Ponovi sifru:
+                        Datum vracanja auta:
                     </td>
                     <td>
-                        <input type="password" #repasswordInput>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Grad:
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Subotica" #cityInput>
+                        <input type="date" style="width: 100%;" #datumVracanjaInput />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Broj:
+                        Mesto vracanja auta:
                     </td>
                     <td>
-                        <input type="number" placeholder="+381 63 4204204" #numberInput>
+                        <input type="password" placeholder="grad vracanja" style="width: 100%;" #mestoVracanjaInput />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Tip vozila:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="karavan,sportski,limuzina..." style="width: 100%;" #tipInput />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Broj sedista:
+                    </td>
+                    <td>
+                        <input type="number" style="width: 100%;" #brojSedistaInput />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cenovni rang: (OPCIONO)
+                    </td>
+                    <td>
+                        <input type="number" style="width: 100%;" #odCenaInput />
+                        <input type="number" style="width: 100%;" #doCenaInput />
                     </td>
                 </tr>
             </table>
         </div>
         <div class="modal-footer">
-            <button class="btn btn-dark" style="width: 100%;" 
-            (click)="register(emailInput,nameInput,lastnameInput,passwordInput,repasswordInput,cityInput,numberInput)"
-            >Register</button>
+            <button class="btn btn-dark" style="width: 100%;">Pretraga</button>
         </div>
       </div>
     </div>
   </div>
-
-

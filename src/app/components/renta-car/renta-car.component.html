@@ -1,0 +1,63 @@
+<div id="pretraga">
+  <select>
+    <option>Marka</option>
+    <option>Prosecna ocena</option>
+    <option>Cena</option>
+    <option >Lokacija</option>
+  </select>
+  <input type="text" placeholder="Unesi pretragu">
+  <button type="button" class="btn btn-success">Pretraga</button>
+  <button type="button" 
+    class="btn btn-success" 
+    data-toggle="modal"
+    data-target="#pretragaModal"
+  >Napredna pretraga</button>
+
+  <button type="button" class="btn btn-danger" style="float: right;">Admin</button>
+</div>
+
+<table class="table" *ngFor="let item of rentovi">
+    <thead>
+      <tr>
+        <th scope="col">Naziv RENT-A-CAR</th>
+        <th scope="col">Adresa</th>
+        <th scope="col">Opis</th>
+        <th scope="col">Prosecan ocena</th>
+        <th scope="col">Filijali</th>
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <th scope="row" style="font-size: xx-large;">{{ item.naziv }}</th>
+        <td>{{ item.adresa }}</td>
+        <td>{{ item.promotivniOpis }}</td>
+        <td>{{ item.prosecnaOcena }}</td>
+        <td>
+          <ul *ngFor="let temp of item.filijali" class="list-group">
+            <li class="list-group-item">{{ temp }}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="col">Dostupna vozila</th>
+        <th scope="col">Marka vozila</th>
+        <th scope="col">Kilometraza</th>
+        <th scope="col">Cena na dan</th>
+        <th scope="col">Prosecan ocena</th>
+        <th scope="col">#</th>
+      </tr>
+      <tr *ngFor="let temp of item.vozila">
+        <td><img src="../../../assets/auti/passat.jpg"></td>
+        <td>{{ temp.marka }}</td>
+        <td>{{ temp.kilometraza }} km</td>
+        <td>{{ temp.cena }} $</td>
+        <td><a href="https://www.google.com">{{ temp.prosecnaOcena }} <br> (Klikom na ovu opciju <br> mozete ostaviti ocenu <br> nakon vracanja vozila)</a></td>
+        <td>
+          <button type="button" class="btn btn-success">Rezervisi</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <app-pretraga></app-pretraga>

@@ -7,12 +7,12 @@ export class Vozilo {
     ocene: Array<number>;
     prosecnaOcena: number;
 
-    constructor(){
-        this.marka = "temp";
-        this.kilometraza = 10000;
-        this.cena = 100;
+    constructor(marka:string, kilo:number, cena:number, ocene:Array<number>){
+        this.marka = marka
+        this.kilometraza = kilo;
+        this.cena = cena;
 
-        this.ocene.push(4,5,6,3,4);
+        this.ocene = ocene;
         this.setOcena(this.ocene);
     }
 

@@ -9,12 +9,14 @@ export class Rent_a_car {
     vozila: Array<Vozilo>;
     filijali: Array<string>; /* lokacije na kojima servis posluje, moze da bude klasa sa punom adresom */
 
-    constructor() {
-        this.naziv = "Temp";
-        this.adresa = "temp";
-        this.promotivniOpis = "tempic";
-        this.ocene.push(4,5,6,3,4);
-        this.setOcena(this.ocene);
+    constructor(naziv:string, adresa:string, opis:string, ocene:Array<number>, vozila:Array<Vozilo>, filijale:Array<string>) {
+        this.naziv = naziv;
+        this.adresa = adresa;
+        this.promotivniOpis = opis;
+        this.ocene = ocene;
+        this.setOcena(ocene);
+        this.vozila = vozila;
+        this.filijali = filijale;
     }
 
     setOcena(ocene: Array<number>) {

@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    float: left;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#pretraga {
+    margin: 5px;
+    padding: 5px;
+}
+
+#pretraga input{
+    margin: 5px;
+}
+
+#pretraga button{
+    margin: 5px;
+}
