@@ -1,0 +1,65 @@
+<!--
+  <h1
+    style="
+      font-weight: 700;
+      font-size: 60px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    "
+    class="d-flex justify-content-center"
+  >
+    <pre>    Lagana priča travel <img height="130" width="180" src="assets/avion_icon.jpg" /></pre>
+  </h1>
+  -->
+<div class="content">
+  <div id="menu">
+    <nav>
+      <a
+        routerLink="aviokompanija"
+        (click)="clickMe()"
+        style="text-decoration: none;"
+      >
+        <div id="aviokompanija">
+          <p>
+            <i>AVIOKARTE</i>
+          </p>
+        </div>
+        <router-outlet></router-outlet>
+      </a>
+    </nav>
+
+    <a
+      routerLink="renta-car"
+      (click)="clickMe()"
+      style="text-decoration: none;"
+    >
+      <div id="rent-a-car">
+        <p>
+          <i>RENT-A-CAR</i>
+        </p>
+      </div>
+      <router-outlet></router-outlet>
+    </a>
+
+    <a
+      routerLink="aviokompanija-renta-car"
+      (click)="clickMe()"
+      style="text-decoration: none;"
+    >
+      <div id="oba">
+        <p>
+          <i>AVIOKARTE I RENT-A-CAR</i>
+        </p>
+      </div>
+      <router-outlet></router-outlet>
+    </a>
+  </div>
+</div>
+
+<div>
+  <app-login></app-login>
+</div>
+
+<div>
+  <app-register></app-register>
+</div>

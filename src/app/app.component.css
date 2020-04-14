@@ -1,81 +1,37 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#navbar  {
-    margin: 0;
-    padding: 0;
-    background-color: #343a40;
+#navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #343a40;
 }
-  
+
 #navbar button {
-    border-radius: 0px;
-    float: left;
+  border-radius: 0px;
+  float: left;
 }
 
 #navbar img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 #lista {
-    list-style-type: none;
-    float: right;
+  list-style-type: none;
+  float: right;
 }
 
 #lista li {
-    float: right;
+  float: right;
 }
 
 #menu {
-    text-align: center;
+  text-align: center;
 }
 
-#buffer { /* ovo samo sluzi da bi se natpis AVIOKARTE lepo centrirao */
-    background-color: #343a40;
-}
-
-#aviokompanija {
-    background: url('../assets/avion.jpg');
-    min-height: 500px;
-    min-width: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#aviokompanija p{
-    color: #f8f9fa;
-    font-size: 128px;
-    line-height: 400px;
-    text-align: center;
-}
-
-#rent-a-car {
-    background: url('../assets/auti.jpg');
-    min-height: 500px;
-    min-width: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#rent-a-car p{
-    color: #f8f9fa;
-    font-size: 128px;
-    line-height: 400px;
-    text-align: center;
-}
-
-#oba{
-    background: url('../assets/auti_i_avioni.jpg');
-    min-height: 500px;
-    min-width: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#oba p{
-    color: #f8f9fa;
-    font-size: 128px;
-    line-height: 400px;
-    text-align: center;
+#buffer {
+  /* ovo samo sluzi da bi se natpis AVIOKARTE lepo centrirao */
+  background-color: #343a40;
 }

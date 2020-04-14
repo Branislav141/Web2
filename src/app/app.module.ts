@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { PocetnaStranicaComponent } from './components/pocetna-stranica/pocetna-stranica.component';
+import { AviokompanijaComponent } from './components/aviokompanija/aviokompanija.component';
+import { RentaCarComponent } from './components/renta-car/renta-car.component';
+import { AviokompanijaRentaCarComponent } from './components/aviokompanija-renta-car/aviokompanija-renta-car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PocetnaStranicaComponent,
+    AviokompanijaComponent,
+    RentaCarComponent,
+    AviokompanijaRentaCarComponent
   ],
   imports: [
     BrowserModule,
