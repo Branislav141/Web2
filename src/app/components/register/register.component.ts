@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Korisnik } from '../../entities/korisnik';
+import { KorisnikService } from '../../services/korisnik.service';
 
 @Component({
   selector: 'app-register',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  registrovaniKorisnici: Array<Korisnik>;
 
-  constructor() { }
+  constructor(private korisnikService: KorisnikService) { 
+    this.registrovaniKorisnici = this.korisnikService.loadKorisnike();
+  }
 
   ngOnInit(): void {
   }
@@ -20,6 +25,21 @@ export class RegisterComponent implements OnInit {
     console.log("Ponovljena sifra je: " + repasswordInput.value);
     console.log("Grad je: " + cityInput.value);
     console.log("Broj je: " + numberInput.value);
+
+    for (let i = 0; i < this.registrovaniKorisnici.length; i++) {
+      if(this.registrovaniKorisnici[i].getEmail() === emailInput.valuessword)
+      {
+        console.log("Ovaj e-mail se vec koristi!");
+        break;
+      } else {
+        if(passwordInput.value === repasswordInput.value)
+        {
+          console.log("Sifre se poklapaju!");
+          console.log("Registrovani se!");
+          break;
+        }
+      }
+    }
   }
 
 }

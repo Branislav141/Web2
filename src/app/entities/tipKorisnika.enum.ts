@@ -1,4 +1,4 @@
-enum TipKorisnika {
+export enum TipKorisnika {
     Neregistrovan = 1,
     Regstrovan,
     AdministratorAviokompanije,
