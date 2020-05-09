@@ -13,7 +13,12 @@
             </div>
           </div>
 
-          <input type="text" class="form-control" placeholder="From" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="From"
+            id="polazakFilter"
+          />
         </div>
       </td>
 
@@ -24,7 +29,12 @@
               <img src="assets/avion_slicica.jpg" height="20px" width="20px" />
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="To" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="To"
+            id="destinacijaFilter"
+          />
         </div>
       </td>
     </tr>
@@ -60,24 +70,14 @@
     </tr>
 
     <tr>
-      <th>
+      <th colspan="2" (click)="letUJednomPravcu()">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <div class="input-group-text">
               <input type="checkbox" />
             </div>
           </div>
-          <label>Jedan pravac</label>
-        </div>
-      </th>
-      <th>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <input type="checkbox" />
-            </div>
-          </div>
-          <label>Povratna karta</label>
+          <label>Let u jednom pravcu</label>
         </div>
       </th>
     </tr>
@@ -87,10 +87,10 @@
         Datum polaska:
       </td>
       <td>
-        <input type="date" id="date" name="date" />
+        <input type="date" id="datumPolaskaFilter" name="date" />
       </td>
     </tr>
-    <tr>
+    <tr [hidden]="hidden">
       <td id="tekst">
         Datum povratka:
       </td>
@@ -107,6 +107,7 @@
               style="min-width: 552px;"
               class="btn btn-dark"
               type="button"
+              (click)="filterFlights()"
             >
               Pretraži
             </button>
@@ -115,4 +116,19 @@
       </td>
     </tr>
   </table>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <h5 id="izgledPret">
+    Pretraga
+  </h5>
+
+  <div [hidden]="filteredFlights.length === 0">
+    <app-avio-filtered [filteredFlights]="filteredFlights"></app-avio-filtered>
+  </div>
 </div>

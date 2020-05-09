@@ -10,6 +10,7 @@ import { AviokompanijaComponent } from './components/aviokompanija/aviokompanija
 import { RentaCarComponent } from './components/renta-car/renta-car.component';
 import { AviokompanijaRentaCarComponent } from './components/aviokompanija-renta-car/aviokompanija-renta-car.component';
 import { PretragaComponent } from './components/pretraga/pretraga.component';
+import { AvioFilteredComponent } from './components/avio-filtered/avio-filtered.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PretragaComponent } from './components/pretraga/pretraga.component';
     RentaCarComponent,
     AviokompanijaRentaCarComponent,
     PretragaComponent,
+    AvioFilteredComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

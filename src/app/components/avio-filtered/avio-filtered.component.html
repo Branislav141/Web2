@@ -1,0 +1,20 @@
+<table style="background-color: aliceblue;" class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Polazak</th>
+      <th scope="col">Destinacija</th>
+      <th scope="col">Cena</th>
+      <th scope="col">Vreme poletanja</th>
+      <th scope="col">Vreme sletanja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let l of filteredFlights">
+      <td>{{ l.polazak }}</td>
+      <td>{{ l.destinacija }}</td>
+      <td>{{ l.cenaKarte }}$</td>
+      <td>{{ l.vremePoletanja }}</td>
+      <td>{{ l.vremeSletanja }}</td>
+    </tr>
+  </tbody>
+</table>

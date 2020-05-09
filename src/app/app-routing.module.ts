@@ -4,7 +4,6 @@ import { PocetnaStranicaComponent } from './components/pocetna-stranica/pocetna-
 import { AviokompanijaComponent } from './components/aviokompanija/aviokompanija.component';
 import { RentaCarComponent } from './components/renta-car/renta-car.component';
 import { AviokompanijaRentaCarComponent } from './components/aviokompanija-renta-car/aviokompanija-renta-car.component';
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
